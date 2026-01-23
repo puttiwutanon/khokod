@@ -1,0 +1,48 @@
+Here's a nice purple-blue-green pastel color palette for you:
+Primary Colors:
+
+Lavender: #E6E6FA or #D8BFD8
+Periwinkle: #CCCCFF or #B0B5F5
+Powder Blue: #B0E0E6 or #A8D8EA
+Mint: #B2F2E6 or #98D8C8
+Sage Green: #C1E1C1 or #B4D7B4
+
+Alternative Palette (softer):
+
+Lilac: #E0BBE4
+Soft Blue: #B4D4E1
+Aqua: #A8E6CF
+Seafoam: #B8E6D5
+
+Gradient-friendly set:
+
+Purple: #D4C5F9
+Blue-Purple: #C5D9F9
+Sky Blue: #C5F0F9
+Turquoise: #C5F9E8
+Mint Green: #CEF9D4
+
+light grey: #D3D3D3
+
+Purple/Lavender Gradient
+
+Light lavender: #E8D5F2 or #F0E5F9
+Medium purple: #C4A5E0 or #D4B5E8
+Accent purple: #9B7CB8 or #A889C9
+
+Blue Accent
+
+Soft blue: #B8D4F1 or #A5C9E8
+Light blue (for checkmarks/icons): #7B9FD3
+
+Supporting Colors
+Background & Text
+
+White/Off-white: #FFFFFF or #FEFEFE
+Light gray (text): #8B8B8B or #A0A0A0
+Dark purple/gray (primary text): #5A4B6B or #4A3B5B
+
+UI Elements
+
+Border/stroke purple: #6B5B7B
+Success green (checkmark): #7BB88F or similar mint/success color
