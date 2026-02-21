@@ -2,28 +2,35 @@ import { View, Text, SafeAreaView, ScrollView, TouchableOpacity } from 'react-na
 import {useEffect, useState} from 'react'
 import { styles } from '../../styles'
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
-import ChatLogs from '../chatLogs';
+import Sidebar from '../sidebar';
 import MainChat from '../mainChat';
 
-const ChatTherapyScreen = () => {
-  const[isChatLogVisible, setIsChatLogVisible] = useState(false)
+const ChatTherapyScreen = ({ navigation, sidebarVisible, setSidebarVisible }) => {
 
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <View style={styles.chatHeader}>
-        <TouchableOpacity style={styles.chatLog} onPress={() => setIsChatLogVisible(!isChatLogVisible)}>
-          <FontAwesome6 name="bars" size={30} color="#575757" />
-        </TouchableOpacity>
+    <View style={{ flex: 1 }}>
+      <SafeAreaView style={{flex: 1}}>
+        <View style={styles.chatHeader}>
+          <TouchableOpacity style={styles.chatLog} onPress={() => setSidebarVisible(true)}>
+            <FontAwesome6 name="bars" size={30} color="#575757" />
+          </TouchableOpacity>
 
-        <TouchableOpacity style={styles.newchat}>
-          <FontAwesome6 name="pen-to-square" size={30} color="#575757" />
-        </TouchableOpacity>
+          <TouchableOpacity style={styles.newchat}>
+            <FontAwesome6 name="pen-to-square" size={30} color="#575757" />
+          </TouchableOpacity>
 
-      </View>
-      <ChatLogs isVisible={isChatLogVisible} onClose={() => setIsChatLogVisible(false)} />
+        </View>
 
-      <MainChat/>
-    </SafeAreaView>
+        <MainChat/>
+      </SafeAreaView>
+
+      <Sidebar
+          isVisible={sidebarVisible}
+          onClose={() => setSidebarVisible(false)}
+          navigation={navigation}
+      />
+    </View>
+
   )
 }
 

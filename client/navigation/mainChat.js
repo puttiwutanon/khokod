@@ -18,7 +18,7 @@ const MainChat = () => {
     // Add user message to chat
     setMessages(prev => [...prev, { type: 'user', text: userMessage }]);
     setIsLoading(true);
-
+ 
     try {
       // Replace with your actual server IP address
       // For Android emulator: use 10.0.2.2

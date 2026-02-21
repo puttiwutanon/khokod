@@ -1,11 +1,12 @@
 import { View, Text, TextInput, TouchableOpacity, Animated, ScrollView } from 'react-native'
 import {useEffect, useState} from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import { styles } from '../../styles'
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
-import { styles } from '../../styles';
 import Sidebar from '../sidebar';
+import TherapistSearchbar from '../therapistSearchbar'
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-const MedAlertScreen = ({ navigation, sidebarVisible, setSidebarVisible }) => {
+const TherapistTest = ({ navigation, sidebarVisible, setSidebarVisible }) => {
   return (
     <View style={{ flex: 1 }}>
       <SafeAreaView style={{ flex: 1 }}>
@@ -15,14 +16,7 @@ const MedAlertScreen = ({ navigation, sidebarVisible, setSidebarVisible }) => {
             </TouchableOpacity>
           </View>
 
-        <ScrollView style={styles.medAlertList}>
 
-        </ScrollView>
-        <View style={styles.addAlert}>
-          <TouchableOpacity style={styles.addAlertButton}>
-            <FontAwesome6 name="plus" size={30} color="#fff" />
-          </TouchableOpacity>
-        </View>
       </SafeAreaView>
 
       <Sidebar
@@ -34,4 +28,4 @@ const MedAlertScreen = ({ navigation, sidebarVisible, setSidebarVisible }) => {
   )
 }
 
-export default MedAlertScreen
+export default TherapistTest

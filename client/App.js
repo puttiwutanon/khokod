@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
-import Navbar from './navigation/navbar';
+import Navbar from './navigation/screenNav';
 import { useFonts } from 'expo-font';
 
 export default function App() {
+  const [sidebarVisible, setSidebarVisible] = useState(false);
   const [fontsLoaded] = useFonts({
     Kanit: require('./assets/fonts/Kanit-Regular.ttf'),
   });
@@ -21,7 +22,10 @@ export default function App() {
   };
   return (
     <NavigationContainer theme={Pastel}>
-      <Navbar />
+      <Navbar 
+        sidebarVisible={sidebarVisible}
+        setSidebarVisible={setSidebarVisible}
+      />
     </NavigationContainer>
   );
 }

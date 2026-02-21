@@ -11,14 +11,12 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#D4B5E8',
     position: 'absolute',
-    bottom: 20,
-    marginHorizontal: 20,
-    borderRadius: 40,
+    alignSelf: 'center'
   },
   tabBarItemStyle: {
     borderRadius: 40,
     overflow: 'hidden',
-    marginVertical: 20, 
+    marginVertical: 30, 
     height: 60,
   },
   chatHeader: {
@@ -94,10 +92,11 @@ export const styles = StyleSheet.create({
   mainChatInput:{
     display: 'flex',
     flexDirection: 'row',
-    width: 'auto',
+    width: '95%',
     fontSize: 20,
     justifyContent: 'space-between',
     alignItems: 'center',
+    alignSelf: 'center',
     borderStyle: 'solid',
     borderColor: '#E0E0E0',
     borderRadius: 100,
@@ -106,7 +105,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#fff',
     fontFamily: 'Kanit',
     padding: 10,
-    marginBottom: '25%'
+    marginBottom: '10%'
   },
   mainChatInputItems:{
     fontFamily: 'Kanit',
@@ -134,6 +133,12 @@ export const styles = StyleSheet.create({
     height: '90%',
     width: '100%'
   },
+  chatLogsList:{
+    height: '45%',
+    width: '100%',
+    borderBottomWidth: 1,
+    borderBottomColor: '#575757'
+  },
   threpistSearchbar:{
     display: 'flex',
     flexDirection: 'row',
@@ -144,12 +149,18 @@ export const styles = StyleSheet.create({
     borderStyle: 'solid',
     borderColor: '#E0E0E0',
     borderRadius: 100,
-    margin: '8%',
-    marginTop: '3%',
+    margin: '10%',
+    marginTop: '0%',
     height: 'auto',
     backgroundColor: '#fff',
     fontFamily: 'Kanit',
-    padding: 10,    
+    padding: 10,
+    width: '90%'    
+  },
+  navButtons:{
+    flex: 1,
+    justifyContent: 'flex-end',
+    paddingBottom: '5%',
   }
 
 });
