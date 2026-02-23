@@ -142,26 +142,121 @@ export const styles = StyleSheet.create({
   threpistSearchbar:{
     display: 'flex',
     flexDirection: 'row',
-    width: 'auto',
     fontSize: 20,
     justifyContent: 'space-between',
     alignItems: 'center',
     borderStyle: 'solid',
     borderColor: '#E0E0E0',
     borderRadius: 100,
-    margin: '10%',
-    marginTop: '0%',
     height: 'auto',
     backgroundColor: '#fff',
     fontFamily: 'Kanit',
     padding: 10,
-    width: '90%'    
+    width: '100%'    
   },
   navButtons:{
     flex: 1,
     justifyContent: 'flex-end',
     paddingBottom: '5%',
-  }
+  },
+  addTaskcontainer: {
+  width: 300,
+  height: 390,
+  padding: 20,
+  backgroundColor: '#fff',
+  borderRadius: 16,
+  elevation: 10,
+  shadowColor: '#000',
+  shadowOffset: { width: 0, height: 4 },
+  shadowOpacity: 0.3,
+  shadowRadius: 6,
+},
+centeredWrapper: {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  alignSelf: 'center'
+},
+taskContainer01: {
+  flexDirection: 'column',
+  alignItems: 'flex-start', 
+},
+taskContainer02: {
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'flex-start', 
+},
+  inputContainer01:{
+    fontFamily: 'Kanit',
+    padding: 5,
+    borderColor: '#808080',
+    borderWidth: 2,
+    width: 200,
+    borderRadius: 8,
+    margin: 8,
+    height: 40
+  },
+  inputContainer02:{
+    fontFamily: 'Kanit',
+    padding: 5,
+    borderColor: '#808080',
+    borderWidth: 2,
+    width: 60,
+    borderRadius: 8,
+    margin: 8,
+    height: 40
+  },
+  buttonContainer:{
+    margin: 5,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center'
+  },
+  buttonItem:{
+    margin: 5,
+    borderRadius: 100,
+    backgroundColor: '#A5C9E8'
+  },
+  AddCancelbutton:{
+    borderRadius: 100,
+    backgroundColor: '#A5C9E8',
+    fontSize: 34,
+    alignItems:'center',
+    justifyContent: 'center',
+    margin: 5,
+    width: 120,
+    height: 50
+  },
+  buttonText:{
+    fontSize: 24,
+    fontFamily: 'Kanit',
+    color: '#fff',
+    alignItems:'center',
+    justifyContent: 'center'
+  },
+  testBox:{
+    marginBottom: 10,
+    marginTop: 10,
+    backgroundColor: '#fff',
+    borderRadius: 20,
+    height: 70,
+    width: '90%',
+    padding: 15,
+    paddingBottom: 10,
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    alignSelf: 'center'
+  },
+  goToTest:{
+    position: 'absolute',
+    right: 25,
+    padding: 10,
+    borderRadius: 10,
+    alignSelf: 'center'
+  },
 
 });
 

@@ -4,8 +4,11 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import { styles } from '../../styles';
 import Sidebar from '../sidebar';
+import AddAlert from '../addAlert';
 
 const MedAlertScreen = ({ navigation, sidebarVisible, setSidebarVisible }) => {
+  
+  const [showAddTask, setShowAddTask] = useState(false);
   return (
     <View style={{ flex: 1 }}>
       <SafeAreaView style={{ flex: 1 }}>
@@ -15,14 +18,21 @@ const MedAlertScreen = ({ navigation, sidebarVisible, setSidebarVisible }) => {
             </TouchableOpacity>
           </View>
 
-        <ScrollView style={styles.medAlertList}>
+        {showAddTask && <AddAlert onCancel={() => setShowAddTask(false)} />}
 
+        <ScrollView style={styles.medAlertList}>
+          
         </ScrollView>
-        <View style={styles.addAlert}>
-          <TouchableOpacity style={styles.addAlertButton}>
-            <FontAwesome6 name="plus" size={30} color="#fff" />
-          </TouchableOpacity>
-        </View>
+
+        
+
+        {!showAddTask && (
+          <View style={styles.addAlert}>
+            <TouchableOpacity style={styles.addAlertButton} onPress={() => setShowAddTask(true)}>
+              <FontAwesome6 name="plus" size={30} color="#fff" />
+            </TouchableOpacity>
+          </View>
+        )}
       </SafeAreaView>
 
       <Sidebar
