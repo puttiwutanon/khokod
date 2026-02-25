@@ -134,7 +134,7 @@ export const styles = StyleSheet.create({
     width: '100%'
   },
   chatLogsList:{
-    height: '45%',
+    height: '38%',
     width: '100%',
     borderBottomWidth: 1,
     borderBottomColor: '#575757'

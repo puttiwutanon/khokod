@@ -33,6 +33,11 @@ const NavButtons = ({ navigation, onClose }) => {
         <FontAwesome6 name="file-circle-check" size={24} color="#575757" />
         <Text style={styles.newChatBar}>ทำแบบทดสอบ</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity onPress={() => navigate('MoodCalendar')} style={styles.newChat}>
+        <FontAwesome name="calendar" size={24} color="#575757" />
+        <Text style={styles.newChatBar}>ปฏิทินอารมณ์</Text>
+      </TouchableOpacity>
     </View>
   );
 };
